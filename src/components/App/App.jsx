@@ -4,6 +4,7 @@ import ContactForm from '../ContactForm/ContactForm';
 import ContactList from '../ContactList/ContactList';
 import Filter from '../Filter/Filter';
 import { Container } from './App.styled';
+import { GlobalStyle } from 'components/GlobalStyle';
 
 class App extends Component {
   state = {
@@ -102,6 +103,7 @@ class App extends Component {
           contacts={visibleContacts}
           onDeleteContact={this.deleteContact}
         />
+        <GlobalStyle />
       </Container>
     );
   }
